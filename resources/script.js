@@ -23,6 +23,7 @@ function initialize(){
 }
 
 function run(){
+  $("#chart1").empty();
   console.log("Connecting to "+connectionType+":"+url+"/"+prefix)
   $.get('https://unpkg.com/enigma.js@2.2.0/schemas/12.34.11.json')
     .then(schema => {
